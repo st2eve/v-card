@@ -44,3 +44,56 @@ table {
 
 /* -- Reset css -- Reset css -- Reset css -- Reset css -- Reset css -- Reset css -- Reset css -- Reset css -- Reset css -- */
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #231123;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div {
+    background-color: #82204A;
+    width: 2000px;
+    height: 650px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 5px;
+    align-items: center;
+}
+img {
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #82204A;
+}
+#skills {
+    position: relative;
+    top: -92px;
+    left: 455px;
+}
+#about_me {
+    position: relative;
+    top: 78px;
+    left: 155px;
+}
+#about_me h2 {
+    display: inline-block;
+}
+#design_one {
+    color: #231123;
+}
+#skills :first-child {
+    z-index: 6;
+    position: relative;
+}
+#skills :nth-child(2){
+    color: #558c8c;
+    position: relative;
+    left: 2px;
+    top: -45px;
+    z-index: 5;
+}
