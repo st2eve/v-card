@@ -50,38 +50,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
 }
 div {
     background-color: #82204A;
-    width: 2000px;
-    height: 650px;
+    height: 95vh;
+    width: 205vh;
     display: flex;
     justify-content: flex-end;
-    border-radius: 5px;
     align-items: center;
 }
 img {
-    width: 500px;
-    height: 350px;
+    width: 130vh;
+    height: 90vh;
     border-radius: 5px;
 }
 h2 {
     font-size: 3rem;
     font-weight: bold;
     color: #82204A;
-}
-#skills {
-    position: relative;
-    top: -92px;
-    left: 455px;
-}
-#about_me {
-    position: relative;
-    top: 78px;
-    left: 155px;
-}
-#about_me h2 {
-    display: inline-block;
 }
 #design_one {
     color: #231123;
