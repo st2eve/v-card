@@ -48,39 +48,142 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #231123;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     height: 100vh;
 }
+p {
+    display: none;
+    color: #558c8c;
+    width: 40vh;
+    margin-top: 10vh;
+    margin-left: 2vh;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1;
+    opacity: 0;
+}
 div {
     background-color: #82204A;
+    border: 2px solid #558c8c;
     height: 95vh;
-    width: 205vh;
+    width: 130vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-radius: 5px;
 }
 img {
-    width: 130vh;
-    height: 90vh;
+    border: 2px solid #558c8c;
+    border-right: none;
+    width: 100vh;
+    height: 70vh;
     border-radius: 5px;
+}
+section {
+    border: 2px solid #558c8c;
+    border-radius: 50px;
+}
+section:hover {
+    cursor: pointer;
+}
+#skills:hover .slide_h2 {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#skills:hover #skills_text {
+    display: block;
+    animation-name: slide_text;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#about_me:hover .slide_h2 {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#about_me:hover #about_me_text {
+    display: block;
+    animation-name: slide_text;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 h2 {
     font-size: 3rem;
     font-weight: bold;
     color: #82204A;
+    margin: 10px;
 }
 #design_one {
     color: #231123;
 }
-#skills :first-child {
-    z-index: 6;
+#skills {
+    align-self: flex-start;
+    position: fixed;
+    left: 54.6vh;
+    top: 25vh;
+}
+#skills :first-child{
     position: relative;
+    z-index: 6;
 }
 #skills :nth-child(2){
-    color: #558c8c;
-    position: relative;
-    left: 2px;
-    top: -45px;
     z-index: 5;
+    color: #558c8c;
+    position: fixed;
+    left: 54.9vh;
+    top: 25.3vh;
+}
+#designbis_one {
+    color: #231123;
+}
+#about_me {
+    position: fixed;
+    left: 54.6vh;
+    top: 50vh;
+}
+#about_me :first-child{
+    position: relative;
+    z-index: 6;
+}
+#about_me :nth-child(2){
+    z-index: 5;
+    color: #558c8c;
+    position: fixed;
+    left: 54.9vh;
+    top: 50.4vh;
+}
+@keyframes slide {
+    from {
+        left: 54.6vh;
+    }
+    to {
+        left: 5vh;
+        transition: opacity 1s;
+        opacity: 1;
+    }
+}
+@keyframes slide_text {
+    from {
+        left: 5vh;
+    }
+    to {
+        display: block;
+        left: 5vh;
+        transition: opacity 1s;
+        opacity: 1;
+    }
 }
